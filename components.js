@@ -33,9 +33,7 @@ export function MemoList(props) {
           </li>
           ))}
         </ul>
-        <input type="text"
-          placeholder="What's Up?"
-          onKeyDown={onSubmit} />
+        <textarea placeholder="What's up?" onKeyUp={onSubmit} />
       </div>
   );
 }
