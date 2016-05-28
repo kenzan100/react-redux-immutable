@@ -41,14 +41,12 @@ export function MemoList(props) {
   } else {
     return (
       <div>
-        <ul>
-          { memos.map(m => (
-            <li key={ m.id }>
-              <button onClick={addHere(m.id)}>Add</button>
-              <Memo memo={ m } />
-            </li>
-          ))}
-        </ul>
+        { memos.map(m => (
+          <div key={ m.id }>
+            <button onClick={addHere(m.id)}>Add</button>
+            <Memo memo={ m } />
+          </div>
+        ))}
       </div>
     );
   }
